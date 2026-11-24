@@ -33,9 +33,8 @@
           freetype
           wayland
           libxkbcommon
-          xorg.libX11
-          xorg.libX11-xcb
-          xorg.libxcb
+          libx11
+          libxcb
           vulkan-loader
           openssl
           zstd
@@ -63,9 +62,9 @@
 
           cargoLock = {
             lockFile = ./Cargo.lock;
-            outputHashes = {
-              "gpui-pre-windows-0.3.12" = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-            };
+            #outputHashes = {
+            #  "gpui-pre-windows-0.3.12" = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+            #};
           };
 
           nativeBuildInputs = nativeBuildInputs;
